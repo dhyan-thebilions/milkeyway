@@ -1,0 +1,99 @@
+.coustom-wrapper {
+  position: absolute !important;
+  padding-top: 70px;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.navbar {
+  --bs-navbar-padding-y: 0rem !important;
+}
+.nav-logo {
+  color: #fff !important;
+  font-family: Inter !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+.nav-font {
+  color: #fff !important;
+  font-family: Inter !important;
+  font-size: 17px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  /* margin-left: 20px !important;
+  margin-right: 20px !important; */
+}
+.nav-button {
+  padding: 12px 24px;
+  gap: 8px;
+  border-radius: 50px;
+  background: #cb39c9;
+  border: none !important;
+
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.nav-button:hover {
+  background-color: #e652e3;
+}
+
+/* Styles for mobile phones*/
+@media only screen and (max-width: 600px) {
+  .nav-logo {
+    color: #fff !important;
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+  }
+  .nav-font {
+    color: #fff !important;
+    font-family: Inter !important;
+    font-size: 17px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+  }
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-toggler {
+    border: none!important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../../public/assets/menu-line.svg");
+  }
+}

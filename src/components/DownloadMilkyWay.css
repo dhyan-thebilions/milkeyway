@@ -1,0 +1,108 @@
+.milkyway-wrapper {
+  background-color: #000;
+}
+.download-the-milkyway {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.follow-these-steps {
+  margin-top: 15px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-download {
+  width: 570px !important;
+  height: 1000px !important;
+  border-radius: 8px !important;
+  border: 1px solid #cb39c9 !important;
+  background: rgba(10, 10, 10, 0.5) !important;
+  padding: 32px 48px !important;
+}
+.mobile-app-store-badge-parent {
+  width: 320px;
+  height: 408px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.image-1-icon {
+  margin-bottom: 25px;
+}
+.platform-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.download-for {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.click-on-the-container {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+}
+/* Styles for mobile phones*/
+@media only screen and (max-width: 600px) {
+  .milkyway-wrapper {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .download-the-milkyway {
+    font-size: 24px;
+  }
+  .follow-these-steps {
+    font-size: 16px;
+  }
+  .card-download-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-download {
+    margin-top: 10px;
+    width: 340px !important;
+    height: 859px !important;
+    padding: 24px !important;
+    gap: 24px !important;
+  }
+  .mobile-app-store-badge {
+    width: 216px;
+    height: 64px;
+  }
+  .image-1-icon {
+    width: 272px;
+    height: 272px;
+  }
+  .download-for {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .click-on-the-container {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

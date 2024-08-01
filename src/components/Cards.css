@@ -1,0 +1,224 @@
+.bg-image {
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 0px 62px 97px;
+  box-sizing: border-box;
+  gap: 64px;
+  background-image: url("../../public/assets/CardBg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: 64px;
+  color: #fff;
+  font-family: Inter;
+}
+.official-facebook-pages {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.please-contact-our-container {
+  margin-top: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-gamming {
+  border-radius: 8px !important;
+  border: 1px solid #777 !important;
+  background: #1f1f1f !important;
+  padding: 22px 23px !important;
+  width: 472px !important;
+  height: 214px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  display: flex !important;
+  gap: 25px !important;
+}
+.vip-gaming {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.vip-gaming-is {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.facebook-fill {
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  top: 158px;
+}
+.games-title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.the-milky-way {
+  margin: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card-image {
+  padding: 4px;
+}
+.card-override {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+}
+.card-body-override {
+  color: #fff !important;
+  text-align: center !important;
+  font-family: Inter !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  text-transform: uppercase !important;
+  border-radius: 8px !important;
+  background: #000 !important;
+}
+.carousel-controls {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 20px 0 21px;
+  box-sizing: border-box;
+}
+.control-buttons {
+  margin-top: 80px;
+  justify-content: center;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button1 {
+  background-color: transparent;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #cb39c9;
+  background: #000;
+}
+.previous-page {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.button2 {
+  background-color: transparent;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #cb39c9;
+  background: #000;
+}
+.next-page {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.button1:hover,
+.button2:hover {
+  background-color: rgba(230, 230, 230, 0.09);
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+/* Styles for mobile phones*/
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    padding: 0px 20px 97px;
+  }
+  .official-facebook-pages {
+    font-size: 20px;
+  }
+  .please-contact-our-container {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .card-gamming-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-gamming {
+    margin-top: 10px !important;
+    width: 340px !important;
+    height: auto !important;
+    padding: 24px !important;
+  }
+  .vip-gaming {
+    font-size: 20px;
+  }
+  .vip-gaming-is {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: start;
+  }
+  .facebook-fill {
+    position: static;
+    /* top: 180px; */
+  }
+  .the-milky-way {
+    margin: 0px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+    font-size: 24px;
+  }
+  .card-body-override {
+    font-size: 18px !important;
+  }
+  .carousel-controls {
+    padding: 0px;
+  }
+  .button1 {
+    padding: 8px 24px;
+  }
+  .previous-page {
+    font-size: 16px;
+  }
+  .button2 {
+    padding: 8px 24px;
+  }
+  .next-page {
+    font-size: 16px;
+  }
+}

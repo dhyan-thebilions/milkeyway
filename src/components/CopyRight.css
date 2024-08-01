@@ -1,0 +1,170 @@
+.copy-wrapper {
+  background-color: #000;
+  padding-top: 80px;
+}
+.join-now-wrapper {
+  display: flex;
+  padding-left: 300px;
+  padding-right: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.now-its {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.join-the-milkway-container {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.big-winner {
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 12px 24px;
+  background-color: #cb39c9;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.button3:hover {
+  background-color: #e652e3;
+}
+.feature-items1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 31px;
+  box-sizing: border-box;
+  gap: 8px;
+  min-width: 196px;
+  max-width: 200px;
+  margin-top: 64px;
+  margin-bottom: 66px;
+}
+.basildocument-solid-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 80px;
+}
+.basildocument-solid-icon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.amazing-customer-service {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.copy-right-bg {
+  background-image: url("../../public/assets/copy-right-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.responsibilly {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.copy-right {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
+
+/* Styles for mobile phones*/
+@media only screen and (max-width: 600px) {
+  .join-now-wrapper {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .now-its {
+    font-size: 24px;
+  }
+  .join-the-milkway-container {
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .big-winner {
+    font-size: 16px;
+  }
+  .button-wrapper {
+    margin-bottom: 64px;
+  }
+  .amazing-customer-service {
+    font-size: 16px;
+  }
+  .feature-items1 {
+    min-width: 0px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .copy-right-bg {
+    padding: 14px;
+  }
+  .responsibilly {
+    font-size: 20px;
+  }
+  .copy-right {
+    font-size: 16px;
+  }
+  .basildocument-solid-wrapper {
+    padding: 0px;
+  }
+}
