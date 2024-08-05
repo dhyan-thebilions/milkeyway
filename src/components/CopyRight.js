@@ -1,6 +1,6 @@
 import React from "react";
 import "./CopyRight.css";
-import { Container, Card, Col, Row } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 
 const CopyRight = () => {
     const rawData = [
@@ -31,24 +31,26 @@ const CopyRight = () => {
     ]
     return (
         <div className="copy-wrapper">
-            <div classN ame="join-now-wrapper">
-                <div className="now-its">NOW IT'S MORE MILKY</div>
-                <div className="join-the-milkway-container">
-                    <span>{`“Join the Milkway and rule the World of Slots and Fish Games. Be the next `}</span>
-                    <span className="big-winner">
-                        BIG WINNER <span>”</span>
-                    </span>
+            <Container>
+                <div classN ame="join-now-wrapper">
+                    <div className="now-its">NOW IT'S MORE MILKY</div>
+                    <div className="join-the-milkway-container">
+                        <span>{`“Join the Milkway and rule the World of Slots and Fish Games. Be the next `}</span>
+                        <span className="big-winner">
+                            BIG WINNER <span>”</span>
+                        </span>
+                    </div>
+                    <div className="button-wrapper">
+                        <button className="button3">
+                            <b className="join-now2">Join Now</b>
+                        </button>
+                    </div>
                 </div>
-                <div className="button-wrapper">
-                    <button className="button3">
-                        <b className="join-now2">Join Now</b>
-                    </button>
-                </div>
-            </div>
+            </Container>
             <Container>
                 <Row>
                     {rawData?.map((item, index) => (
-                        <Col xs={6} sm={6} md={4} lg={2} key={index + 1}>
+                        <Col xs={6} sm={6} md={4} lg={4} xl={2} key={index + 1}>
                             <div className="feature-items1">
                                 <div className="basildocument-solid-wrapper">
                                     <img

@@ -30,6 +30,8 @@
   line-height: normal;
   padding-left: 28px;
   padding-right: 28px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .big-winner {
   color: #fff;
@@ -38,6 +40,10 @@
   font-style: italic;
   font-weight: 700;
   line-height: normal;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 .button3 {
   cursor: pointer;
@@ -166,5 +172,32 @@
   }
   .basildocument-solid-wrapper {
     padding: 0px;
+  }
+}
+
+/* Styles for Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .now-its {
+    font-size: 24px;
+  }
+  .join-the-milkway-container {
+    font-size: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .big-winner {
+    font-size: 20px;
+  }
+  .button-wrapper {
+    margin-bottom: 64px;
+  }
+  .amazing-customer-service {
+    font-size: 20px;
+  }
+  .feature-items1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }

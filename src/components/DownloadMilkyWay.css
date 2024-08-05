@@ -66,6 +66,7 @@
   font-weight: 500;
   line-height: 35px;
 }
+
 /* Styles for mobile phones*/
 @media only screen and (max-width: 600px) {
   .milkyway-wrapper {
@@ -104,5 +105,36 @@
   .click-on-the-container {
     font-size: 18px;
     line-height: 25px;
+  }
+}
+
+/* Styles for Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .download-the-milkyway {
+    font-size: 40px;
+  }
+  .follow-these-steps {
+    font-size: 20px;
+  }
+  .card-download {
+    width: 320px !important;
+    padding: 24px !important;
+  }
+  .mobile-app-store-badge {
+    width: 216px;
+    height: 64px;
+  }
+  .image-1-icon {
+    width: 272px;
+    height: 272px;
+  }
+  .download-for {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .click-on-the-container {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 32px;
   }
 }

@@ -1,74 +1,19 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import "./Cards.css";
+import { cardData } from "../data/CardData";
+import Pagination from "./Pagination";
 import { Container, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
 
 const Crads = () => {
-    const testData = [
-        {
-            image: "game-01.png",
-            name: "Hot_St.PatrickFortunes",
-        },
-        {
-            image: "game-02.png",
-            name: "Hot_Joker_sMysteryReels",
-        },
-        {
-            image: "game-03.png",
-            name: "Monster  Awakener",
-        },
-        {
-            image: "game-04.png",
-            name: "Bunny Bonanza Spin",
-        },
-        {
-            image: "game-05.png",
-            name: "MerryChristmas",
-        },
-        {
-            image: "game-06.png",
-            name: "Hot_GoldRushFrenzy",
-        },
-        {
-            image: "game-07.png",
-            name: "Hot_LadyDiamond",
-        },
-        {
-            image: "game-08.png",
-            name: "Hot_ForestAviators",
-        },
-        {
-            image: "game-09.png",
-            name: "Fish_jackpotParty",
-        },
-        {
-            image: "game-10.png",
-            name: "PiggyGold",
-        },
-        {
-            image: "game-11.png",
-            name: "Hot_FiveTimesPay_Deluxe",
-        },
-        {
-            image: "game-12.png",
-            name: "SuperBingo",
-        },
-        {
-            image: "game-13.png",
-            name: "Dragon Dynasty",
-        },
-        {
-            image: "game-14.png",
-            name: "4thofJuly",
-        },
-        {
-            image: "game-15.png",
-            name: "RaceTheHorse",
-        },
-        {
-            image: "game-16.png",
-            name: "777Fruity",
-        },
-    ];
+    const PageSize = 16;
+
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const rawData = useMemo(() => {
+        const firstPageIndex = (currentPage - 1) * PageSize;
+        const lastPageIndex = firstPageIndex + PageSize;
+        return cardData.slice(firstPageIndex, lastPageIndex);
+    }, [currentPage]);
 
     return (
         <section className="bg-image">
@@ -77,9 +22,8 @@ const Crads = () => {
                 <div>Please contact our official</div>
                 <div>Partners for account creation</div>
             </div>
-            {/* <Container fluid className="d-flex justify-content-center sm-mt-2 mt-5"> */}
-            <div className="d-flex justify-content-center sm-mt-2 mt-5">
-                <Row >
+            <Container className="d-flex justify-content-center my-sm-2 my-md-3 my-lg-5">
+                <Row>
                     <Col sm="12" md="6" className="card-gamming-wrapper">
                         <Card className="card-gamming">
                             <div className="vip-gaming">VIP GAMING</div>
@@ -113,29 +57,35 @@ const Crads = () => {
                         </Card>
                     </Col>
                 </Row>
-            </div>
-            {/* </Container> */}
+            </Container>
             <div className="games-title">
                 <h1 className="the-milky-way">THE MILKY WAY GAMES</h1>
             </div>
-            <Row>
-                {testData?.map((item, index) => (
-                    <Col sm="6" md="3" key={index + 1}>
-                        <Card className="my-2 card-override">
-                            <img
-                                className="card-image"
-                                alt={index + 1}
-                                src={`../assets/${item?.image}`}
-                            />
-                            <CardBody className="card-body-override">
-                                <CardTitle className="guns-coins">
-                                    {item?.name}
-                                </CardTitle>
-                            </CardBody>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
+            <Container>
+                <Row>
+                    {rawData?.map((item, index) => (
+                        <Col xs={12} sm={12} md={6} lg={3} xl={3} key={index + 1}>
+                            <Card className="my-2 card-override">
+                                <img
+                                    className="card-image"
+                                    alt={index + 1}
+                                    src={`../assets/game/${item?.image}`}
+                                />
+                                <CardBody className="card-body-override">
+                                    <CardTitle className="guns-coins">{item?.name}</CardTitle>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+            {/* <Pagination
+                className="pagination-bar"
+                currentPage={currentPage}
+                totalCount={cardData?.length}
+                pageSize={PageSize}
+                onPageChange={(page) => setCurrentPage(page)}
+            /> */}
             <div className="carousel-controls">
                 <div className="control-buttons">
                     <button className="button1">

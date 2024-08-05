@@ -13,6 +13,7 @@
   color: #fff;
   font-family: Inter;
 }
+
 .official-facebook-pages {
   color: #fff;
   text-align: center;
@@ -22,6 +23,7 @@
   font-weight: 700;
   line-height: normal;
 }
+
 .please-contact-our-container {
   margin-top: 16px;
   color: #fff;
@@ -32,6 +34,7 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .card-gamming {
   border-radius: 8px !important;
   border: 1px solid #777 !important;
@@ -44,6 +47,7 @@
   display: flex !important;
   gap: 25px !important;
 }
+
 .vip-gaming {
   color: #fff;
   font-family: Inter;
@@ -52,6 +56,7 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .vip-gaming-is {
   color: #fff;
   font-family: Inter;
@@ -59,13 +64,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: start;
 }
+
 .facebook-fill {
   box-sizing: border-box;
   display: flex;
   position: absolute;
   top: 158px;
 }
+
 .games-title {
   align-self: stretch;
   display: flex;
@@ -73,6 +81,7 @@
   align-items: flex-start;
   justify-content: center;
 }
+
 .the-milky-way {
   margin: 40px;
   color: #fff;
@@ -83,18 +92,21 @@
   font-weight: 700;
   line-height: normal;
 }
+
 .card-image {
   padding: 4px;
 }
+
 .card-override {
   background: transparent !important;
   border: 1px solid #fff !important;
 }
+
 .card-body-override {
   color: #fff !important;
   text-align: center !important;
   font-family: Inter !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: normal !important;
@@ -102,12 +114,14 @@
   border-radius: 8px !important;
   background: #000 !important;
 }
+
 .carousel-controls {
   align-self: stretch;
   justify-content: center;
   padding: 0 20px 0 21px;
   box-sizing: border-box;
 }
+
 .control-buttons {
   margin-top: 80px;
   justify-content: center;
@@ -116,6 +130,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 .button1 {
   background-color: transparent;
   display: flex;
@@ -127,6 +142,7 @@
   border: 1px solid #cb39c9;
   background: #000;
 }
+
 .previous-page {
   color: #fff;
   text-align: center;
@@ -136,6 +152,7 @@
   font-weight: 700;
   line-height: 24px;
 }
+
 .button2 {
   background-color: transparent;
   display: flex;
@@ -147,6 +164,7 @@
   border: 1px solid #cb39c9;
   background: #000;
 }
+
 .next-page {
   color: #fff;
   text-align: center;
@@ -156,11 +174,18 @@
   font-weight: 700;
   line-height: 24px;
 }
+
 .button1:hover,
 .button2:hover {
   background-color: rgba(230, 230, 230, 0.09);
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
+}
+
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Styles for mobile phones*/
@@ -195,7 +220,6 @@
   }
   .facebook-fill {
     position: static;
-    /* top: 180px; */
   }
   .the-milky-way {
     margin: 0px;
@@ -220,5 +244,36 @@
   }
   .next-page {
     font-size: 16px;
+  }
+}
+
+/* Styles for Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .official-facebook-pages {
+    font-size: 24px;
+  }
+  .please-contact-our-container {
+    font-size: 20px;
+  }
+  .card-gamming {
+    width: auto !important;
+    height: 270px !important;
+    padding: 24px !important;
+    gap: 10px !important;
+  }
+  .facebook-fill {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 200px;
+  }
+  .the-milky-way {
+    font-size: 40px;
+  }
+  .card-body-override {
+    font-size: 18px !important;
+  }
+  .control-buttons {
+    justify-content: space-between;
   }
 }

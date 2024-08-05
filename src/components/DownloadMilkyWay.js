@@ -5,15 +5,16 @@ import "./DownloadMilkyWay.css";
 const DownloadMilkyWay = () => {
     return (
         <div className="milkyway-wrapper">
-            <h1 className="download-the-milkyway">
-                Download the MilkyWay App
-            </h1>
-            <div className="follow-these-steps">
-                Follow these steps to download and install the Milky Way app
-                on your device
-            </div>
+            <Container>
+                <h1 className="download-the-milkyway">
+                    Download the MilkyWay App
+                </h1>
+                <div className="follow-these-steps">
+                    Follow these steps to download and install the Milky Way app
+                    on your device
+                </div>
+            </Container>
             <Container
-                fluid
                 className="d-flex justify-content-center sm-mt-2 mt-5"
             >
                 <Row>

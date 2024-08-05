@@ -82,3 +82,20 @@
     line-height: 26px;
   }
 }
+
+/* Styles for Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .looking-for-an {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 664px;
+    padding: 32px 60px;
+  }
+  .hero-title {
+    width: auto;
+    max-width: auto;
+  }
+}
