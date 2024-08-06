@@ -16,7 +16,7 @@ const Crads = () => {
     }, [currentPage]);
 
     return (
-        <section className="bg-image">
+        <div className="bg-image">
             <div className="official-facebook-pages">OFFICIAL FACEBOOK PAGES</div>
             <div className="please-contact-our-container">
                 <div>Please contact our official</div>
@@ -78,15 +78,16 @@ const Crads = () => {
                         </Col>
                     ))}
                 </Row>
+
+                <Pagination
+                    className="pagination-bar"
+                    currentPage={currentPage}
+                    totalCount={cardData?.length}
+                    pageSize={PageSize}
+                    onPageChange={(page) => setCurrentPage(page)}
+                />
             </Container>
-            {/* <Pagination
-                className="pagination-bar"
-                currentPage={currentPage}
-                totalCount={cardData?.length}
-                pageSize={PageSize}
-                onPageChange={(page) => setCurrentPage(page)}
-            /> */}
-            <div className="carousel-controls">
+            {/* <div className="carousel-controls">
                 <div className="control-buttons">
                     <button className="button1">
                         <b className="previous-page">Previous Page</b>
@@ -95,8 +96,8 @@ const Crads = () => {
                         <b className="next-page">Next Page</b>
                     </button>
                 </div>
-            </div>
-        </section>
+            </div> */}
+        </div>
     );
 };
 

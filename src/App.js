@@ -10,13 +10,13 @@ import "reactstrap/lib";
 
 function App() {
   return (
-    <>
+    <div className="component-wrapper">
       <NavBar />
       <MilkyWay />
       <Cards />
       <DownloadMilkyWay />
       <CopyRight />
-    </>
+    </div>
   );
 }
 

@@ -29,14 +29,14 @@ const Pagination = ({ onPageChange, currentPage, totalCount, pageSize, siblingCo
         <ul
             className={classnames('pagination-container', { [className]: className })}
         >
-            {/* <li
+            <li
                 className={classnames('pagination-item', {
                     disabled: currentPage === 1
                 })}
                 onClick={onPrevious}
             >
                 <div className="arrow left">Previous Page</div>
-            </li> */}
+            </li>
             {paginationRange.map(pageNumber => {
                 if (pageNumber === DOTS) {
                     return <li className="pagination-item dots">&#8230;</li>;
@@ -53,14 +53,14 @@ const Pagination = ({ onPageChange, currentPage, totalCount, pageSize, siblingCo
                     </li>
                 );
             })}
-            {/* <li
+            <li
                 className={classnames('pagination-item', {
                     disabled: currentPage === lastPage
                 })}
                 onClick={onNext}
             >
                 <div className="arrow right">Next Page</div>
-            </li> */}
+            </li>
         </ul>
     );
 };

@@ -1,13 +1,13 @@
 .bg-image {
-  overflow: hidden;
-  align-items: flex-start;
-  padding: 0px 62px 97px;
-  box-sizing: border-box;
-  gap: 64px;
   background-image: url("../../public/assets/CardBg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  overflow: hidden;
+  align-items: flex-start;
+  /* padding: 0px 62px 97px; */
+  box-sizing: border-box;
+  gap: 64px;
   text-align: center;
   font-size: 64px;
   color: #fff;
