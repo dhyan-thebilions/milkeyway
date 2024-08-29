@@ -41,7 +41,10 @@ const CopyRight = () => {
                         </span>
                     </div>
                     <div className="button-wrapper">
-                        <button className="button3">
+                        <button
+                            className="button3"
+                            onClick={() => window.open('https://www.facebook.com/profile.php?id=61564151433682', '_blank')}
+                        >
                             <b className="join-now2">Join Now</b>
                         </button>
                     </div>

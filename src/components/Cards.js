@@ -37,21 +37,23 @@ const Crads = () => {
                                     loading="lazy"
                                     alt=""
                                     src="/assets/icon/facebook-icon.png"
+                                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61551686566639', '_blank')}
                                 />
                             </div>
                         </Card>
                     </Col>
                     <Col sm="12" md="6" className="card-gamming-wrapper">
                         <Card className="card-gamming">
-                            <div className="vip-gaming">JUWA SLOTS </div>
+                            <div className="vip-gaming">Milkyway SLOTS </div>
                             <div className="vip-gaming-is">
-                                Join Juwa slots to receive 200% bonus on the first deposit.
+                                Join Milkyway slots to receive 200% bonus on the first deposit.
                             </div>
                             <div className="facebook-fill">
                                 <img
                                     loading="lazy"
                                     alt=""
                                     src="/assets/icon/facebook-icon.png"
+                                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61564151433682', '_blank')}
                                 />
                             </div>
                         </Card>

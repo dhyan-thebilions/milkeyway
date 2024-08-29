@@ -68,6 +68,7 @@
 }
 
 .facebook-fill {
+  cursor: pointer;
   box-sizing: border-box;
   display: flex;
   position: absolute;

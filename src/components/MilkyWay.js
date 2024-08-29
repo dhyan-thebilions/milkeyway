@@ -16,7 +16,10 @@ const MilkyWay = () => {
                 </div>
             </div>
             <div className="play-button-warpper">
-                <button className="play-button">
+                <button
+                    className="play-button"
+                    onClick={() => window.open('https://www.facebook.com/profile.php?id=61564151433682', '_blank')}
+                >
                     <b className="play-now">Play Now</b>
                 </button>
             </div>
